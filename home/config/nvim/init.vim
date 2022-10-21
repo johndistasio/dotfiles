@@ -55,6 +55,7 @@ Plug 'joshdick/onedark.vim'
 Plug 'junegunn/seoul256.vim'
 Plug 'morhetz/gruvbox'
 Plug 'mhartington/oceanic-next'
+Plug 'sainnhe/everforest'
 
 " Initialize plugin system
 call plug#end()
@@ -87,7 +88,7 @@ if exists('+termguicolors')
 endif
 
 " Set default colorscheme.
-colorscheme onedark
+colorscheme everforest
 set background=dark
 let g:neosolarized_contrast = "high"
 
