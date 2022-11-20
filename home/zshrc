@@ -173,7 +173,7 @@ node() {
 # go
 export GOPATH="$HOME/go"
 export PATH="$GOPATH/bin:$PATH"
-export PATH="/usr/local/go/bin:$PATH"
+export PATH="$HOME/.local/go/bin:$PATH"
 
 # Fix navigation cluster keys within zsh
 bindkey "\e[1~" beginning-of-line
