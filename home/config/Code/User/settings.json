@@ -1,6 +1,7 @@
 {
-    "workbench.preferredDarkColorTheme": "Everforest Dark",
+    "editor.tabCompletion": "on",
+    "keyboard.dispatch": "keyCode",
     "workbench.colorTheme": "Everforest Dark",
-    "window.zoomLevel": 1,
-    "editor.tabCompletion": "on"
+    "workbench.preferredDarkColorTheme": "Everforest Dark",
+    "window.zoomLevel": 1
 }
