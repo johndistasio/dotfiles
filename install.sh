@@ -74,3 +74,7 @@ if [[ -z "${HOME}" ]]; then
 fi
 
 (link "${DOTS}" "${DRYRUN}") | column -t
+
+# TODO make idempotent
+git clone --depth 1 https://github.com/wbthomason/packer.nvim\
+ ~/.local/share/nvim/site/pack/packer/start/packer.nvim
