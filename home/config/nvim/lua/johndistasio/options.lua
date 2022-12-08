@@ -27,6 +27,9 @@ local options = {
   -- how many columns to indent text with << and >>
   shiftwidth = 2,
 
+  -- rely on statusline plugin to show us the currentmode
+  showmode = false,
+
   -- how many columns to use when inserting tabs
   softtabstop = 2,
 
@@ -37,7 +40,7 @@ local options = {
   splitright = true,
 
   -- don't create swap files
-  swapfile = true,
+  swapfile = false,
 
   -- number of columns to display tabs as
   tabstop = 2,

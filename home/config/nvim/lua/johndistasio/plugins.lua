@@ -1,9 +1,12 @@
 return require('packer').startup(function(use)
   use 'wbthomason/packer.nvim'
 
+  use 'nvim-lualine/lualine.nvim'
+
+  use 'tpope/vim-fugitive'
   use 'tpope/vim-vinegar'
 
-  -- Colorschemes
+  -- colorschemes
   use 'sainnhe/everforest'
   use 'icymind/NeoSolarized'
   use 'joshdick/onedark.vim'
