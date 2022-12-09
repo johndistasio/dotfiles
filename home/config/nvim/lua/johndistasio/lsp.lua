@@ -1,0 +1,31 @@
+require('mason').setup()
+
+require('mason-lspconfig').setup {
+  ensure_installed = {
+    -- bash
+    'bashls',
+
+    -- golang
+    'gopls',
+
+    -- python
+    'pyright',
+
+    -- markdown
+    'remark_ls',
+
+    -- lua
+    'sumneko_lua',
+
+    -- typescript
+    'tsserver',
+  },
+}
+
+-- :h mason-lspconfig-automatic-server-setup
+require('mason-lspconfig').setup_handlers {
+  -- default handler
+  function (server_name)
+    require('lspconfig')[server_name].setup{}
+  end
+}

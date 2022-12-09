@@ -1,12 +1,16 @@
 return require('packer').startup(function(use)
   use 'wbthomason/packer.nvim'
 
+  use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
+
+  use 'williamboman/mason.nvim'
+  use 'williamboman/mason-lspconfig.nvim'
+  use 'neovim/nvim-lspconfig'
+
   use 'nvim-lualine/lualine.nvim'
 
   use 'tpope/vim-fugitive'
   use 'tpope/vim-vinegar'
-
-  use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
 
   -- colorschemes
   use 'sainnhe/everforest'
