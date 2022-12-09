@@ -1,8 +1,9 @@
-vim.g.python3_host_prog = vim.env.HOME .. '/.venv/neovim/bin/python'
+vim.g.python3_host_prog = vim.env.HOME .. '/.venv/neovim/bin/python3'
 
 require 'johndistasio.options'
 require 'johndistasio.plugins'
 require 'johndistasio.keymaps'
 require 'johndistasio.lualine'
+require 'johndistasio.treesitter'
 
 vim.cmd('colorscheme everforest')

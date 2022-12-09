@@ -1,3 +1,6 @@
+-- options.lua
+-- Sets general options for nvim. Options may be set elsewhere.
+
 local options = {
   -- never automatically save
   autowrite = false,
@@ -49,6 +52,6 @@ local options = {
   termguicolors = true,
 }
 
-for k, v in pairs (options) do
+for k, v in pairs(options) do
   vim.opt[k] = v
 end
