@@ -6,6 +6,8 @@ return require('packer').startup(function(use)
   use 'tpope/vim-fugitive'
   use 'tpope/vim-vinegar'
 
+  use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
+
   -- colorschemes
   use 'sainnhe/everforest'
   use 'icymind/NeoSolarized'
