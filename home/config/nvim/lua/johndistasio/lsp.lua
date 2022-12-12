@@ -18,7 +18,7 @@ require('mason-lspconfig').setup {
     'sumneko_lua',
 
     -- terraform
-    'tflint',
+    'terraformls',
 
     -- typescript
     'tsserver',
