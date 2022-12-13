@@ -11,9 +11,6 @@ require('mason-lspconfig').setup {
     -- python
     'pyright',
 
-    -- markdown
-    'remark_ls',
-
     -- lua
     'sumneko_lua',
 
