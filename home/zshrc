@@ -80,7 +80,6 @@ precmd() {
 PROMPT='${clr[blue]}%~${clr[reset]}${vcs_info_msg_0_}%# '
 
 alias cds="$HOME/src"
-alias k="kubectl"
 alias ll='ls -lh --color=auto'
 alias ls='ls -h --color=auto'
 
@@ -111,6 +110,10 @@ fi
 
 # Ensure XDG binpath is in PATH.
 export PATH="$HOME/.local/bin:$PATH"
+
+# kubernetes
+alias k="kubectl"
+export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
 
 # python
 export PYENV_ROOT="$HOME/.pyenv"
