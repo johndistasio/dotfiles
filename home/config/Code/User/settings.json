@@ -1,8 +1,9 @@
 {
     "editor.tabCompletion": "on",
+    "everforest.darkWorkbench": "flat",
     "keyboard.dispatch": "keyCode",
-    "workbench.colorTheme": "Everforest Dark",
-    "workbench.preferredDarkColorTheme": "Everforest Dark",
     "window.zoomLevel": 1,
-    "workbench.editor.enablePreview": false
+    "workbench.colorTheme": "Everforest Dark",
+    "workbench.editor.enablePreview": false,
+    "workbench.preferredDarkColorTheme": "Everforest Dark"
 }
