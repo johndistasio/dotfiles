@@ -5,5 +5,6 @@
     "window.zoomLevel": 1,
     "workbench.colorTheme": "Everforest Dark",
     "workbench.editor.enablePreview": false,
-    "workbench.preferredDarkColorTheme": "Everforest Dark"
+    "workbench.preferredDarkColorTheme": "Everforest Dark",
+    "editor.fontFamily": "'Ubuntu Mono', 'Droid Sans Mono', 'monospace', monospace"
 }
