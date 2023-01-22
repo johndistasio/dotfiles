@@ -167,13 +167,16 @@ export GOPATH="$HOME/go"
 export PATH="$GOPATH/bin:$PATH"
 export PATH="$HOME/.local/go/bin:$PATH"
 
+# rust
+source $HOME/.cargo/env
+
 # Fix navigation cluster keys within zsh
-bindkey "\e[1~" beginning-of-line
-bindkey "\e[2~" quoted-insert
-bindkey "\e[3~" delete-char
-bindkey "\e[4~" end-of-line
-bindkey "\e[5~" beginning-of-history
-bindkey "\e[6~" end-of-history
+bindkey "^[[H" beginning-of-line
+bindkey "^[[F" end-of-line 
+bindkey "^[[2~" quoted-insert
+bindkey "^[[3~" delete-char
+bindkey "^[[5~" beginning-of-history
+bindkey "^[[6~" end-of-history
 
 # Stick any site-local configuration in here (i.e. employer-specific config).
 [[ -f ~/.zshrc.local ]] && source ~/.zshrc.local
