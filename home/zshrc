@@ -112,8 +112,11 @@ fi
 export PATH="$HOME/.local/bin:$PATH"
 
 # kubernetes
-alias k="kubectl"
-export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
+if type kubectl &> /dev/null; then
+  alias k="kubectl"
+  export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
+  source <(kubectl completion zsh)
+fi
 
 # python
 export PYENV_ROOT="$HOME/.pyenv"
