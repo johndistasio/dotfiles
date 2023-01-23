@@ -159,7 +159,7 @@ else
   source "$NVM_DIR/nvm.sh"
 
   if type yarn &> /dev/null; then
-    export PATH="$PATH:$(yarn global bin)"
+    export PATH="$(yarn global bin):$PATH"
   fi
 fi
 
