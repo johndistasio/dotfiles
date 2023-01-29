@@ -2,9 +2,11 @@
   "editor.fontFamily": "'Ubuntu Mono', 'Droid Sans Mono', 'monospace', monospace",
   "editor.tabCompletion": "on",
   "everforest.darkWorkbench": "flat",
+  "extensions.ignoreRecommendations": true,
   "keyboard.dispatch": "keyCode",
   "window.zoomLevel": 1,
   "workbench.colorTheme": "Catppuccin Frappé",
   "workbench.editor.enablePreview": false,
-  "workbench.preferredDarkColorTheme": "Everforest Dark"
+  "workbench.iconTheme": "vscode-jetbrains-icon-theme",
+  "workbench.preferredDarkColorTheme": "Catppuccin Frappé"
 }
