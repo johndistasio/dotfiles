@@ -5,7 +5,8 @@
     "prettier": "2.8.3"
   },
   "lint-staged": {
-    "**/*.json": "node sort-json.js"
+    "**/*.json": "node .husky/sort-json.js",
+    "**/*": "prettier --write --ignore-unknown ."
   },
   "scripts": {
     "prepare": "husky install"
