@@ -1,10 +1,10 @@
 {
-    "editor.tabCompletion": "on",
-    "everforest.darkWorkbench": "flat",
-    "keyboard.dispatch": "keyCode",
-    "window.zoomLevel": 1,
-    "workbench.colorTheme": "Everforest Dark",
-    "workbench.editor.enablePreview": false,
-    "workbench.preferredDarkColorTheme": "Everforest Dark",
-    "editor.fontFamily": "'Ubuntu Mono', 'Droid Sans Mono', 'monospace', monospace"
+  "editor.fontFamily": "'Ubuntu Mono', 'Droid Sans Mono', 'monospace', monospace",
+  "editor.tabCompletion": "on",
+  "everforest.darkWorkbench": "flat",
+  "keyboard.dispatch": "keyCode",
+  "window.zoomLevel": 1,
+  "workbench.colorTheme": "Catppuccin Frappé",
+  "workbench.editor.enablePreview": false,
+  "workbench.preferredDarkColorTheme": "Everforest Dark"
 }
