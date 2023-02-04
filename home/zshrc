@@ -161,6 +161,11 @@ else
   if type yarn &> /dev/null; then
     export PATH="$PATH:$(yarn global bin)"
   fi
+
+  if type pnpm &> /dev/null; then
+    export PNPM_HOME="$HOME/.local/share/pnpm"
+    export PATH="$PNPM_HOME:$PATH"
+  fi
 fi
 
 # go
