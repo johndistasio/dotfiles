@@ -9,6 +9,7 @@
     "**/*": "prettier --write --ignore-unknown ."
   },
   "scripts": {
+    "lint": "prettier --write --ignore-unknown .",
     "prepare": "husky install"
   }
 }
