@@ -5,7 +5,7 @@
     "prettier": "2.8.3"
   },
   "lint-staged": {
-    "**/*.json": "node scripts/sort-json.js",
+    "**/*.json": "node scripts/sort-json.mjs",
     "**/*": "prettier --write --ignore-unknown ."
   },
   "scripts": {
