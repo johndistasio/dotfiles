@@ -12,7 +12,7 @@ require('mason-lspconfig').setup {
     'pyright',
 
     -- lua
-    'sumneko_lua',
+    'lua_ls',
 
     -- terraform
     'terraformls',
@@ -29,8 +29,8 @@ require('mason-lspconfig').setup_handlers {
     require('lspconfig')[server_name].setup{}
   end,
 
-  ['sumneko_lua'] = function ()
-    require('lspconfig').sumneko_lua.setup {
+  ['lua_ls'] = function ()
+    require('lspconfig').lua_ls.setup {
       settings = {
         Lua = {
           diagnostics = {
