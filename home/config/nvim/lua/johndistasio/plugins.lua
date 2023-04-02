@@ -13,6 +13,7 @@ return require('packer').startup(function(use)
   use 'tpope/vim-vinegar'
 
   -- colorschemes
+  use { "catppuccin/nvim", as = "catppuccin" }
   use 'sainnhe/everforest'
   use 'icymind/NeoSolarized'
   use 'joshdick/onedark.vim'

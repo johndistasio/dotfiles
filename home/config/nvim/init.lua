@@ -7,4 +7,4 @@ require 'johndistasio.lualine'
 require 'johndistasio.treesitter'
 require 'johndistasio.lsp'
 
-vim.cmd('colorscheme everforest')
+vim.cmd('colorscheme catppuccin-frappe')
