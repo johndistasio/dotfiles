@@ -9,6 +9,13 @@
     "<C-b>": false,
     "<C-k>": false
   },
+  "vim.normalModeKeyBindings": [
+    {
+      "before": ["-"],
+      "commands": ["vsnetrw.open"],
+      "when": "editorLangId != vsnetrw"
+    }
+  ],
   "window.zoomLevel": 1,
   "workbench.colorTheme": "Catppuccin Frappé",
   "workbench.editor.enablePreview": false,
