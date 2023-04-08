@@ -7,6 +7,9 @@ return require('packer').startup(function(use)
   use 'williamboman/mason-lspconfig.nvim'
   use 'neovim/nvim-lspconfig'
 
+  use 'ms-jpq/coq_nvim'
+  -- use {'ms-jpq/coq.artifacts', branch = 'artifacts' }
+
   use 'nvim-lualine/lualine.nvim'
 
   use 'tpope/vim-fugitive'

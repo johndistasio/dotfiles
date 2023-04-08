@@ -8,3 +8,5 @@ require 'johndistasio.treesitter'
 require 'johndistasio.lsp'
 
 vim.cmd('colorscheme catppuccin-frappe')
+
+vim.cmd('COQnow --shut-up')

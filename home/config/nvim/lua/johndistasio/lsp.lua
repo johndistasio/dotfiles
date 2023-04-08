@@ -22,15 +22,31 @@ require('mason-lspconfig').setup {
   },
 }
 
+vim.g.coq_settings = {
+  clients = {
+    snippets = {
+      enabled = false
+    },
+  },
+  display = {
+    icons = {
+      mode = 'none'
+    },
+  },
+}
+local coq = require 'coq'
+
 -- :h mason-lspconfig-automatic-server-setup
 require('mason-lspconfig').setup_handlers {
+
   -- default handler
   function (server_name)
-    require('lspconfig')[server_name].setup{}
+    require('lspconfig')[server_name].setup(coq.lsp_ensure_capabilities({}))
   end,
 
   ['lua_ls'] = function ()
-    require('lspconfig').lua_ls.setup {
+    require('lspconfig').lua_ls.setup(
+      coq.lsp_ensure_capabilities({
       settings = {
         Lua = {
           diagnostics = {
@@ -38,6 +54,6 @@ require('mason-lspconfig').setup_handlers {
           },
         },
       },
-    }
+    }))
   end,
 }
