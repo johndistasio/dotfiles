@@ -8,6 +8,7 @@ require('nvim-treesitter.configs').setup {
     'make',
     'proto',
     'python',
+    'terraform',
     'typescript',
   },
 
@@ -16,6 +17,7 @@ require('nvim-treesitter.configs').setup {
   },
 }
 
+-- TODO remember and comment what this does
 vim.o.foldmethod = 'expr'
 vim.o.foldexpr = 'nvim_treesitter#foldexpr()'
 vim.o.foldenable = false
