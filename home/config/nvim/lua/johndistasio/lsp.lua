@@ -46,24 +46,24 @@ local nvim_lsp = require 'lspconfig'
 require('mason-lspconfig').setup_handlers {
 
   -- default handler
-  function (server_name)
+  function(server_name)
     nvim_lsp[server_name].setup(coq.lsp_ensure_capabilities({}))
   end,
 
-  ['lua_ls'] = function ()
+  ['lua_ls'] = function()
     nvim_lsp['lua_ls'].setup(
       coq.lsp_ensure_capabilities({
-      settings = {
-        Lua = {
-          diagnostics = {
-            globals = {'vim', 'require'},
+        settings = {
+          Lua = {
+            diagnostics = {
+              globals = { 'vim', 'require' },
+            },
           },
         },
-      },
-    }))
+      }))
   end,
 
-  ['denols'] = function ()
+  ['denols'] = function()
     nvim_lsp['denols'].setup(
       coq.lsp_ensure_capabilities({
         root_dir = nvim_lsp.util.root_pattern("deno.json", "deno.jsonc"),
@@ -71,7 +71,7 @@ require('mason-lspconfig').setup_handlers {
     )
   end,
 
-  ['tsserver'] = function ()
+  ['tsserver'] = function()
     nvim_lsp['tsserver'].setup(
       coq.lsp_ensure_capabilities({
         root_dir = nvim_lsp.util.root_pattern("package.json"),
