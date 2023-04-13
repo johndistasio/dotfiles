@@ -7,6 +7,10 @@ return require('packer').startup(function(use)
   use 'williamboman/mason-lspconfig.nvim'
   use 'neovim/nvim-lspconfig'
 
+  use {
+    'nvim-telescope/telescope.nvim', tag = '0.1.1', requires = { 'nvim-lua/plenary.nvim' }
+  }
+
   use 'ms-jpq/coq_nvim'
   -- use {'ms-jpq/coq.artifacts', branch = 'artifacts' }
 
