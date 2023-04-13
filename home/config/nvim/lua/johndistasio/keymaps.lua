@@ -19,10 +19,10 @@ keymap('n', '<leader>fg', builtin.live_grep, {})
 keymap('n', '<leader>fb', builtin.buffers, {})
 
 -- Lists LSP references for word under the cursor
-keymap('n', '<leader>lr', builtin.lsp_references, {})
+keymap('n', '<leader>fr', builtin.lsp_references, {})
 
 -- Goto the implementation of the word under the cursor if there's only one, otherwise show all options in Telescope
-keymap('n', '<leader>li', builtin.lsp_implementations, {})
+keymap('n', '<leader>fi', builtin.lsp_implementations, {})
 
 -- Goto the definition of the word under the cursor, if there's only one, otherwise show all options in Telescope
-keymap('n', '<leader>ld', builtin.lsp_definitions, {})
+keymap('n', '<leader>fd', builtin.lsp_definitions, {})
