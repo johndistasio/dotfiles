@@ -2,25 +2,13 @@ require('mason').setup()
 
 require('mason-lspconfig').setup {
   ensure_installed = {
-    -- bash
     'bashls',
-
-    -- deno
     'denols',
-
-    -- golang
     'gopls',
-
-    -- python
     'pyright',
-
-    -- lua
     'lua_ls',
-
-    -- terraform
+    'rust_analyzer',
     'terraformls',
-
-    -- typescript
     'tsserver',
   },
 }
