@@ -77,3 +77,9 @@ vim.api.nvim_create_autocmd('LspAttach', {
     vim.keymap.set('n', 'K', vim.lsp.buf.hover, { buffer = args.buf })
   end,
 })
+
+-- Initialize lsp_lines plugin
+require("lsp_lines").setup()
+
+-- Disable default LSP diagnostics as we're relying on the lsp_lines plugin to show us this information
+vim.diagnostic.config({ virtual_text = false })

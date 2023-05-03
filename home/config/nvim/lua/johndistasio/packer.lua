@@ -7,6 +7,8 @@ return require('packer').startup(function(use)
   use 'williamboman/mason-lspconfig.nvim'
   use 'neovim/nvim-lspconfig'
 
+  use 'https://git.sr.ht/~whynothugo/lsp_lines.nvim'
+
   use {
     'nvim-telescope/telescope.nvim', tag = '0.1.1', requires = { 'nvim-lua/plenary.nvim' }
   }
