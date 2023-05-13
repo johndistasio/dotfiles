@@ -22,7 +22,5 @@ vim.api.nvim_create_autocmd('LspAttach', {
 
     -- Goto the definition of the word under the cursor, if there's only one, otherwise show all options in Telescope
     keymap('n', '<leader>fd', builtin.lsp_definitions, { buffer = args.buf })
-
-    keymap('n', '<leader>fd', builtin.lsp_definitions, { buffer = args.buf })
   end,
 })
