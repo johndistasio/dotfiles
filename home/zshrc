@@ -75,7 +75,8 @@ precmd() {
   vcs_info
 }
 
-PROMPT='${clr[blue]}%~${clr[reset]}${vcs_info_msg_0_}%# '
+# https://zsh.sourceforge.io/Doc/Release/Prompt-Expansion.html
+PROMPT='${clr[blue]}%1~${clr[reset]}${vcs_info_msg_0_}%# '
 
 if type nvim &> /dev/null; then
   export EDITOR=nvim
