@@ -22,7 +22,8 @@ return require('packer').startup(function(use)
   use 'tpope/vim-vinegar'
 
   -- colorschemes
-  use { "catppuccin/nvim", as = "catppuccin" }
+  use { 'catppuccin/nvim', as = 'catppuccin' }
+  use { 'rose-pine/neovim', as = 'rose-pine' }
   use 'sainnhe/everforest'
   use 'icymind/NeoSolarized'
   use 'joshdick/onedark.vim'
