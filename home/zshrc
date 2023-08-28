@@ -23,6 +23,9 @@ clr[blue]='%F{12}'
 clr[purple]='%F{13}'
 clr[cyan]='%F{13}'
 
+# source asdf completions
+fpath=($HOME/.asdf/completions $fpath)
+
 # Initialize the completion system.
 autoload -Uz compinit && compinit
 
@@ -158,24 +161,6 @@ venv() {
   fi
 }
 
-# javascript
-export NVM_DIR="$HOME/.nvm"
-
-if [[ ! -f "$NVM_DIR/nvm.sh" ]]; then
-  echo "nvm is not installed"
-else
-  source "$NVM_DIR/nvm.sh"
-
-  if type yarn &> /dev/null; then
-    export PATH="$(yarn global bin):$PATH"
-  fi
-
-  if type pnpm &> /dev/null; then
-    export PNPM_HOME="$HOME/.local/share/pnpm"
-    export PATH="$PNPM_HOME:$PATH"
-  fi
-fi
-
 # go
 export GOPATH="$HOME/go"
 export PATH="$GOPATH/bin:$PATH"
@@ -201,6 +186,9 @@ if type antibody > /dev/null; then
 else
   echo "zsh plugins not installed; antibody is missing"
 fi
+
+# asdf
+source "$HOME/.asdf/asdf.sh"
 
 # Uncomment for startup performance analysis (2/2)
 #zprof
