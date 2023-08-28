@@ -169,6 +169,10 @@ export PATH="$HOME/.local/go/bin:$PATH"
 # rust
 [[ -f ~/.cargo/env ]] && source ~/.cargo/env
 
+# erlang
+# https://adoptingerlang.org/docs/development/setup/
+export ERL_AFLAGS="+pc unicode -kernel shell_history enabled"
+
 # Fix navigation cluster keys within zsh
 bindkey "^[[H" beginning-of-line
 bindkey "^[[F" end-of-line 
