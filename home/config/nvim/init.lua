@@ -8,6 +8,9 @@ require 'johndistasio.lsp'
 require 'johndistasio.keymaps'
 require 'johndistasio.telescope'
 
+require('oil').setup()
+vim.keymap.set("n", "-", "<CMD>Oil<CR>", { desc = "Open parent directory" })
+
 vim.cmd [[autocmd BufWritePre * lua vim.lsp.buf.format()]]
 
 vim.cmd('colorscheme catppuccin-frappe')

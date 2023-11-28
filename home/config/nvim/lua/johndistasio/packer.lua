@@ -19,7 +19,9 @@ return require('packer').startup(function(use)
   use 'nvim-lualine/lualine.nvim'
 
   use 'tpope/vim-fugitive'
-  use 'tpope/vim-vinegar'
+
+  -- use 'tpope/vim-vinegar'
+  use 'stevearc/oil.nvim'
 
   -- colorschemes
   use { 'catppuccin/nvim', as = 'catppuccin' }
