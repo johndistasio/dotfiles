@@ -153,6 +153,8 @@ export PATH="$HOME/.local/go/bin:$PATH"
 # erlang
 # https://adoptingerlang.org/docs/development/setup/
 export ERL_AFLAGS="+pc unicode -kernel shell_history enabled"
+# rebar3 installed with 'rebar3 local install'
+export PATH=$HOME/.cache/rebar3/bin:$PATH
 
 # Fix navigation cluster keys within zsh
 bindkey "^[[H" beginning-of-line
