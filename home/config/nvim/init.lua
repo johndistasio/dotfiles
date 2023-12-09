@@ -8,7 +8,11 @@ require 'johndistasio.lsp'
 require 'johndistasio.keymaps'
 require 'johndistasio.telescope'
 
-require('oil').setup()
+require('oil').setup({
+  view_options = {
+    show_hidden = true,
+  },
+})
 vim.keymap.set("n", "-", "<CMD>Oil<CR>", { desc = "Open parent directory" })
 
 vim.cmd [[autocmd BufWritePre * lua vim.lsp.buf.format()]]
