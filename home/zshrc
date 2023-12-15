@@ -156,6 +156,10 @@ export ERL_AFLAGS="+pc unicode -kernel shell_history enabled"
 # rebar3 installed with 'rebar3 local install'
 export PATH=$HOME/.cache/rebar3/bin:$PATH
 
+# ocaml
+# opam configuration
+[[ ! -r $HOME/.opam/opam-init/init.zsh ]] || source $HOME/.opam/opam-init/init.zsh  > /dev/null 2> /dev/null
+
 # Fix navigation cluster keys within zsh
 bindkey "^[[H" beginning-of-line
 bindkey "^[[F" end-of-line 
@@ -179,3 +183,4 @@ source "$HOME/.asdf/asdf.sh"
 
 # Uncomment for startup performance analysis (2/2)
 #zprof
+
