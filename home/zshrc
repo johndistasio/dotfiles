@@ -100,16 +100,6 @@ alias ..='cd ..'
 # Tidy up and truncate output filenames to avoid hitting filename size limitations.
 alias ydl='youtube-dl -o "%(title).150s-%(id)s.%(ext)s" --restrict-filenames'
 
-# Ensure brew-installed versions of GNU tools are used instead of BSD tools on MacOS.
-if $darwin; then
-  if [ -f /opt/homebrew/bin/brew ]; then
-    eval "$(/opt/homebrew/bin/brew shellenv)"
-  fi
-  PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
-  PATH="/usr/local/opt/findutils/libexec/gnubin:$PATH"
-  PATH="/usr/local/opt/gnu-sed/libexec/gnubin:$PATH"
-fi
-
 # Ensure XDG binpath is in PATH.
 export PATH="$HOME/.local/bin:$PATH"
 
