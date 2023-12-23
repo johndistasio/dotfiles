@@ -101,7 +101,7 @@ alias ..='cd ..'
 alias ydl='youtube-dl -o "%(title).150s-%(id)s.%(ext)s" --restrict-filenames'
 
 # Ensure XDG binpath is in PATH.
-export PATH="$HOME/.local/bin:$PATH"
+[[ "$PATH" == *"$HOME/.local/bin:"* ]] || export PATH="$HOME/.local/bin:$PATH"
 
 # kubernetes
 if type kubectl &> /dev/null; then
