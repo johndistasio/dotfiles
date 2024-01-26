@@ -74,11 +74,3 @@ if [[ -z "${HOME}" ]]; then
 fi
 
 (link "${DOTS}" "${DRYRUN}") | column -t
-
-
-PACKER="$HOME/.local/share/nvim/site/pack/packer/start/packer.nvim"
-
-if [[ ! -d "${PACKER}" ]]; then
-  git clone --depth 1 \
-    https://github.com/wbthomason/packer.nvim "${PACKER}"
-fi
