@@ -13,16 +13,24 @@ return {
     end,
   },
   { "sainnhe/everforest" },
-  { "icymind/NeoSolarized" },
-  { "joshdick/onedark.vim" },
+  { "sainnhe/sonokai" },
   { "junegunn/seoul256.vim" },
   { "morhetz/gruvbox" },
-  -- catpuccin is installed by default in LazyVim
+  { "rebelot/kanagawa.nvim" },
+  { "axvr/photon.vim" },
+  { "nyoom-engineering/oxocarbon.nvim" },
+  { "romgrk/doom-one.vim" },
+  { "catppuccin/nvim", name = "catppuccin", priority = 1000 },
+  { "kxzk/skull-vim" },
+  { "kvrohit/rasmus.nvim" },
+  { "NTBBloodbath/doom-one.nvim" },
+  { "gmr458/cold.nvim" },
 
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "rose-pine-moon",
+      --colorscheme = "catppuccin-frappe",
+      colorscheme = "rasmus",
     },
   },
 }
