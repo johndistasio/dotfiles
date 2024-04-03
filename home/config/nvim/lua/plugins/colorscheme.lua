@@ -25,12 +25,14 @@ return {
   { "kvrohit/rasmus.nvim" },
   { "NTBBloodbath/doom-one.nvim" },
   { "gmr458/cold.nvim" },
+  { "AlexvZyl/nordic.nvim" },
+  { "lewpoly/sherbet.nvim" },
 
   {
     "LazyVim/LazyVim",
     opts = {
       --colorscheme = "catppuccin-frappe",
-      colorscheme = "rasmus",
+      colorscheme = "sherbet",
     },
   },
 }
