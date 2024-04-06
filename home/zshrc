@@ -92,6 +92,10 @@ alias ls='ls -h --color=auto'
 if $darwin; then
   alias ll='ls -lhG'
   alias ls='ls -hG'
+
+  if [ -f /opt/homebrew/bin/brew ]; then
+    eval "$(/opt/homebrew/bin/brew shellenv)"
+  fi
 fi
 
 # Have a lot of fun!
