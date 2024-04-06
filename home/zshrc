@@ -81,10 +81,6 @@ precmd() {
 # https://zsh.sourceforge.io/Doc/Release/Prompt-Expansion.html
 PROMPT='${clr[blue]}%1~${clr[reset]}${vcs_info_msg_0_}%# '
 
-if type nvim &> /dev/null; then
-  export EDITOR=nvim
-fi
-
 alias cds="$HOME/src"
 alias ll='ls -lh --color=auto'
 alias ls='ls -h --color=auto'
