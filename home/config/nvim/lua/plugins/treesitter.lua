@@ -17,7 +17,7 @@ return {
         -- https://github.com/nvim-treesitter/nvim-treesitter/issues/5751
         -- "markdown",
         -- "markdown_inline",
-        --"python",
+        "python",
         "query",
         "regex",
         "rust",
