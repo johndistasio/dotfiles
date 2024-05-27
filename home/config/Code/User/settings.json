@@ -14,6 +14,18 @@
       "commands": ["workbench.action.closeActiveEditor"]
     },
     {
+      "before": ["<leader>", "b", "o"],
+      "commands": ["workbench.action.closeOtherEditors"]
+    },
+    {
+      "before": ["b", "["],
+      "commands": ["workbench.action.previousEditor"]
+    },
+    {
+      "before": ["b", "]"],
+      "commands": ["workbench.action.nextEditor"]
+    },
+    {
       "before": ["<leader>", "f", "f"],
       "commands": ["workbench.action.quickOpen"]
     }
