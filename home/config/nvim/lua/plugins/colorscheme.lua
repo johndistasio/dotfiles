@@ -32,7 +32,8 @@ return {
     "LazyVim/LazyVim",
     opts = {
       --colorscheme = "catppuccin-frappe",
-      colorscheme = "sherbet",
+      --colorscheme = "sherbet",
+      colorscheme = "nordic",
     },
   },
 }
