@@ -18,11 +18,11 @@
       "commands": ["workbench.action.closeOtherEditors"]
     },
     {
-      "before": ["b", "["],
+      "before": ["[", "b"],
       "commands": ["workbench.action.previousEditor"]
     },
     {
-      "before": ["b", "]"],
+      "before": ["[", "b"],
       "commands": ["workbench.action.nextEditor"]
     },
     {
@@ -36,7 +36,7 @@
   ],
   "vim.leader": "<space>",
   "window.zoomLevel": 1,
-  "workbench.colorTheme": "Catppuccin Frappé",
+  "workbench.colorTheme": "Kanagawa",
   "workbench.editor.enablePreview": false,
   "workbench.iconTheme": "vscode-jetbrains-icon-theme",
   "workbench.preferredDarkColorTheme": "Catppuccin Frappé",
