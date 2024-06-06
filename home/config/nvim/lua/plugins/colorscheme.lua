@@ -13,18 +13,11 @@ return {
     end,
   },
   { "sainnhe/everforest" },
-  { "sainnhe/sonokai" },
   { "junegunn/seoul256.vim" },
   { "morhetz/gruvbox" },
   { "rebelot/kanagawa.nvim" },
-  { "axvr/photon.vim" },
-  { "nyoom-engineering/oxocarbon.nvim" },
   { "romgrk/doom-one.vim" },
   { "catppuccin/nvim", name = "catppuccin", priority = 1000 },
-  { "kxzk/skull-vim" },
-  { "kvrohit/rasmus.nvim" },
-  { "NTBBloodbath/doom-one.nvim" },
-  { "gmr458/cold.nvim" },
   { "AlexvZyl/nordic.nvim" },
   { "lewpoly/sherbet.nvim" },
 
@@ -33,7 +26,8 @@ return {
     opts = {
       --colorscheme = "catppuccin-frappe",
       --colorscheme = "sherbet",
-      colorscheme = "nordic",
+      --colorscheme = "nordic",
+      colorscheme = "kanagawa",
     },
   },
 }

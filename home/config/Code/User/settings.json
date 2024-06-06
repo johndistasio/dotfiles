@@ -1,6 +1,5 @@
 {
   "editor.tabCompletion": "on",
-  "everforest.darkWorkbench": "flat",
   "extensions.ignoreRecommendations": true,
   "keyboard.dispatch": "keyCode",
   "svelte.enable-ts-plugin": true,
@@ -38,8 +37,6 @@
   "window.zoomLevel": 1,
   "workbench.colorTheme": "Kanagawa",
   "workbench.editor.enablePreview": false,
-  "workbench.iconTheme": "vscode-jetbrains-icon-theme",
-  "workbench.preferredDarkColorTheme": "Catppuccin Frappé",
   "editor.fontFamily": "'Source Code Pro', 'Droid Sans Mono', 'monospace', monospace",
   "editor.fontSize": 16,
 }
