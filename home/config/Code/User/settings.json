@@ -37,6 +37,6 @@
   "window.zoomLevel": 1,
   "workbench.colorTheme": "Kanagawa",
   "workbench.editor.enablePreview": false,
-  "editor.fontFamily": "'Source Code Pro', 'Droid Sans Mono', 'monospace', monospace",
+  "editor.fontFamily": "'Inconsolata', 'Source Code Pro', 'Droid Sans Mono', 'monospace', monospace",
   "editor.fontSize": 16,
 }
