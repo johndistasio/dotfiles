@@ -154,18 +154,16 @@ bindkey "^[[3~" delete-char
 bindkey "^[[5~" beginning-of-history
 bindkey "^[[6~" end-of-history
 
-# Stick any site-local configuration in here (i.e. employer-specific config).
-[[ -f ~/.zshrc.local ]] && source ~/.zshrc.local
-
-if type antibody > /dev/null; then
-  source <(antibody init)
-  antibody bundle < "$HOME/.zsh_plugins.txt"
-else
-  echo "zsh plugins not installed; antibody is missing"
+if [[ -d "$HOME/.antidote" ]] then
+  source "$HOME/.antidote/antidote.zsh"
+  antidote load "$HOME/.zsh_plugins.txt"
 fi
 
 # asdf
 [[ -d "$HOME/.asdf" ]] && source "$HOME/.asdf/asdf.sh"
+
+# Stick any site-local configuration in here (i.e. employer-specific config).
+[[ -f ~/.zshrc.local ]] && source ~/.zshrc.local
 
 # Uncomment for startup performance analysis (2/2)
 #zprof
