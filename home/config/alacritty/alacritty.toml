@@ -9,7 +9,7 @@ normal = {family = "Inconsolata Nerd Font Mono", style = "Regular" }
 #normal = {family = "Source Code Pro", style = "Regular" }
 #normal = {family = "0xProto Nerd Font Mono", style = "Regular" }
 
-size = 18
+size = 14
 
 
 [window]
