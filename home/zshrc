@@ -165,7 +165,7 @@ else
 fi
 
 # asdf
-source "$HOME/.asdf/asdf.sh"
+[[ -d "$HOME/.asdf" ]] && source "$HOME/.asdf/asdf.sh"
 
 # Uncomment for startup performance analysis (2/2)
 #zprof
