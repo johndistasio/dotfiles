@@ -1,6 +1,11 @@
 # Uncomment for startup performance analysis (1/2)
 #zmodload zsh/zprof
 
+# From: https://unix.stackexchange.com/questions/62579/is-there-a-way-to-add-a-directory-to-my-path-in-zsh-only-if-its-not-already-pre
+# In zsh, $PATH is tied to the "path" array, and -U forces that to have unique values.
+# Add elements to the path with "path+=(~/foo)".
+typeset -U path PATH
+
 local darwin=false
 
 case "$(uname -s)" in
@@ -103,12 +108,12 @@ alias ..='cd ..'
 alias ydl='youtube-dl -o "%(title).150s-%(id)s.%(ext)s" --restrict-filenames'
 
 # Ensure XDG binpath is in PATH.
-[[ "$PATH" == *"$HOME/.local/bin:"* ]] || export PATH="$HOME/.local/bin:$PATH"
+path+=("$HOME/.local/bin")
 
 # kubernetes
 if type kubectl &> /dev/null; then
+  path+=("${KREW_ROOT:-$HOME/.krew}/bin")
   alias k="kubectl"
-  export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
   source <(kubectl completion zsh)
 fi
 
@@ -129,8 +134,8 @@ venv() {
 
 # go
 export GOPATH="$HOME/go"
-export PATH="$GOPATH/bin:$PATH"
-export PATH="$HOME/.local/go/bin:$PATH"
+path+=("$GOPATH/bin")
+path+=("$HOME/.local/go/bin")
 
 # rust
 [[ -f ~/.cargo/env ]] && source ~/.cargo/env
@@ -139,7 +144,7 @@ export PATH="$HOME/.local/go/bin:$PATH"
 # https://adoptingerlang.org/docs/development/setup/
 export ERL_AFLAGS="+pc unicode -kernel shell_history enabled"
 # rebar3 installed with 'rebar3 local install'
-export PATH=$HOME/.cache/rebar3/bin:$PATH
+path+=("$HOME/.cache/rebar3/bin")
 
 # ocaml
 # opam configuration
