@@ -40,5 +40,5 @@
   "editor.fontSize": 16,
   "telemetry.enableCrashReporter": false,
   "telemetry.enableTelemetry": false,
-  "telementy.telemetryLevel": "off"
+  "telemetry.telemetryLevel": "off"
 }
