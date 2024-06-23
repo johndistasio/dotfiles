@@ -24,7 +24,9 @@ clr[purple]='%F{13}'
 clr[cyan]='%F{13}'
 
 # source asdf completions
-fpath=($HOME/.asdf/completions $fpath)
+if [[ -d "$HOME/.asdf/completions" ]]; then 
+  fpath=("$HOME/.asdf/completions" $fpath)
+fi
 
 # Initialize the completion system.
 autoload -Uz compinit && compinit
