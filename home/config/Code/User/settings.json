@@ -37,7 +37,6 @@
   "workbench.colorTheme": "Kanagawa",
   "workbench.editor.enablePreview": false,
   "editor.fontFamily": "'Inconsolata', 'Source Code Pro', 'Droid Sans Mono', 'monospace', monospace",
-  "editor.fontSize": 16,
   "telemetry.enableCrashReporter": false,
   "telemetry.enableTelemetry": false,
   "telemetry.telemetryLevel": "off"
