@@ -6,16 +6,8 @@ local wk = require("which-key")
 
 -- Register custom keymaps for temporary JSON and YAML file "scratchpads".
 -- These will auto-format the content pasted into them and allow closing with plain "q".
-wk.register({
-  j = {
-    name = "scratchpad",
-    j = {
-      ":set ft=json <bar> %!jq<CR> <bar> :setlocal nobuflisted buftype=nofile bufhidden=wipe noswapfile<CR>",
-      "JSON",
-    },
-    y = {
-      ":set ft=yaml <bar> :setlocal nobuflisted buftype=nofile bufhidden=wipe noswapfile<CR>",
-      "YAML",
-    },
-  },
-}, { prefix = "<leader>" })
+wk.add({
+    { "<leader>j", group = "scratchpad" },
+    { "<leader>jj", ":set ft=json <bar> %!jq<CR> <bar> :setlocal nobuflisted buftype=nofile bufhidden=wipe noswapfile<CR>", desc = "JSON" },
+    { "<leader>jy", ":set ft=yaml <bar> :setlocal nobuflisted buftype=nofile bufhidden=wipe noswapfile<CR>", desc = "YAML" },
+})
