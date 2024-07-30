@@ -34,10 +34,12 @@
   ],
   "vim.leader": "<space>",
   "window.zoomLevel": 1,
-  "workbench.colorTheme": "Kanagawa",
   "workbench.editor.enablePreview": false,
   "editor.fontFamily": "'Inconsolata', 'Source Code Pro', 'Droid Sans Mono', 'monospace', monospace",
   "telemetry.enableCrashReporter": false,
   "telemetry.enableTelemetry": false,
-  "telemetry.telemetryLevel": "off"
+  "telemetry.telemetryLevel": "off",
+  "debug.console.fontSize": 12,
+  "editor.fontSize": 13,
+  "workbench.colorTheme": "Kanagawa"
 }
