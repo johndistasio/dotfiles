@@ -1,0 +1,17 @@
+import = [ "~/.config/alacritty/kanagawa.toml" ]
+
+[font]
+normal = {family = "Inconsolata Nerd Font Mono", style = "Regular" }
+#normal = {family = "Space Mono", style = "Regular" }
+#normal = {family = "Proggy Vector", style = "Regular" }
+#normal = {family = "Ubuntu Mono", style = "Regular" }
+#normal = {family = "Monocraft Nerd Font", style = "Regular" }
+#normal = {family = "Source Code Pro", style = "Regular" }
+#normal = {family = "0xProto Nerd Font Mono", style = "Regular" }
+
+size = 14
+
+
+[window]
+opacity = 1
+

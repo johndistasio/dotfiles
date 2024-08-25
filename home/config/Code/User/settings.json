@@ -1,0 +1,78 @@
+{
+  "editor.tabCompletion": "on",
+  "extensions.ignoreRecommendations": true,
+  "keyboard.dispatch": "keyCode",
+  "vim.handleKeys": {
+    "<C-b>": false,
+    "<C-k>": false
+  },
+  "vim.normalModeKeyBindings": [
+    {
+      "before": [
+        "<leader>",
+        "b",
+        "d"
+      ],
+      "commands": [
+        "workbench.action.closeActiveEditor"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "b",
+        "o"
+      ],
+      "commands": [
+        "workbench.action.closeOtherEditors"
+      ]
+    },
+    {
+      "before": [
+        "[",
+        "b"
+      ],
+      "commands": [
+        "workbench.action.previousEditor"
+      ]
+    },
+    {
+      "before": [
+        "]",
+        "b"
+      ],
+      "commands": [
+        "workbench.action.nextEditor"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "f",
+        "f"
+      ],
+      "commands": [
+        "workbench.action.quickOpen"
+      ]
+    },
+    {
+      "before": [
+        "K"
+      ],
+      "commands": [
+        "editor.action.showHover"
+      ]
+    }
+  ],
+  "vim.leader": "<space>",
+  "window.zoomLevel": 1,
+  "workbench.editor.enablePreview": false,
+  "editor.fontFamily": "'Inconsolata', 'Source Code Pro', 'Droid Sans Mono', 'monospace', monospace",
+  "telemetry.enableCrashReporter": false,
+  "telemetry.enableTelemetry": false,
+  "telemetry.telemetryLevel": "off",
+  "debug.console.fontSize": 12,
+  "editor.fontSize": 12,
+  "editor.formatOnSave": true,
+  "workbench.colorTheme": "doom-one"
+}
