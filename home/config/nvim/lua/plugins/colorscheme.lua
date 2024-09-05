@@ -19,18 +19,15 @@ return {
   { "romgrk/doom-one.vim" },
   { "catppuccin/nvim", name = "catppuccin", priority = 1000 },
   { "AlexvZyl/nordic.nvim" },
-  --{ "lewpoly/sherbet.nvim" },
-  { "johndistasio/sherbet.nvim",
-    branch = "lsp-inlay-hint",
-    url = "git@github.com:johndistasio/sherbet.nvim.git" },
+  { "johndistasio/sherbet.nvim" },
 
   {
     "LazyVim/LazyVim",
     opts = {
       --colorscheme = "catppuccin-frappe",
-      --colorscheme = "sherbet",
+      colorscheme = "sherbet",
       --colorscheme = "nordic",
-      colorscheme = "kanagawa",
+      --colorscheme = "kanagawa",
     },
   },
 }
