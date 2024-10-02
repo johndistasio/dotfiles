@@ -74,5 +74,11 @@
   "debug.console.fontSize": 12,
   "editor.fontSize": 12,
   "editor.formatOnSave": true,
-  "workbench.colorTheme": "doom-one"
+  "cmake.pinnedCommands": [
+    "workbench.action.tasks.configureTaskRunner",
+    "workbench.action.tasks.runTask"
+  ],
+  "cmake.showOptionsMovedNotification": false,
+  "[cmake]": {},
+  "workbench.colorTheme": "Visual Studio Dark"
 }
