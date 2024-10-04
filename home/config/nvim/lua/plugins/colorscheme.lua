@@ -20,14 +20,12 @@ return {
   { "catppuccin/nvim", name = "catppuccin", priority = 1000 },
   { "AlexvZyl/nordic.nvim" },
   { "johndistasio/sherbet.nvim" },
+  { "savq/melange-nvim" },
 
   {
     "LazyVim/LazyVim",
     opts = {
-      --colorscheme = "catppuccin-frappe",
-      colorscheme = "sherbet",
-      --colorscheme = "nordic",
-      --colorscheme = "kanagawa",
+      colorscheme = "melange",
     },
   },
 }
