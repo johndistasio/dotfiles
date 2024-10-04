@@ -1,4 +1,4 @@
-import = [ "~/.config/alacritty/kanagawa.toml" ]
+import = [ "~/.config/alacritty/melange_dark.toml" ]
 
 [font]
 normal = {family = "Inconsolata Nerd Font Mono", style = "Regular" }
