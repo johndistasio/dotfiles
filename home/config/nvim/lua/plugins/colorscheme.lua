@@ -21,7 +21,6 @@ return {
   { "AlexvZyl/nordic.nvim" },
   { "johndistasio/sherbet.nvim" },
   { "savq/melange-nvim" },
-
   {
     "LazyVim/LazyVim",
     opts = {
