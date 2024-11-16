@@ -85,8 +85,12 @@ precmd() {
   vcs_info
 }
 
+# Add a marker to our prompt if we're in a toolbox container.
+tbx=""
+[[ -r /run/.containerenv ]] && tbx="⬢ "
+
 # https://zsh.sourceforge.io/Doc/Release/Prompt-Expansion.html
-PROMPT='${clr[blue]}%1~${clr[reset]}${vcs_info_msg_0_}%# '
+PROMPT='${clr[red]}${tbx}${clr[reset]}${clr[blue]}%1~${clr[reset]}${vcs_info_msg_0_}%# '
 
 alias cds="$HOME/src"
 alias ll='ls -lh --color=auto'
@@ -149,7 +153,7 @@ path+=("$HOME/.cache/rebar3/bin")
 
 # ocaml
 # opam configuration
-[[ ! -r $HOME/.opam/opam-init/init.zsh ]] || source $HOME/.opam/opam-init/init.zsh  > /dev/null 2> /dev/null
+[[ ! -r $HOME/.opam/opam-init/init.zsh ]] || source $HOME/.opam/opam-init/init.zsh > /dev/null 2> /dev/null
 
 # .net
 export DOTNET_CLI_TELEMETRY_OPTOUT=true
@@ -168,7 +172,7 @@ if [[ -d "$HOME/.antidote" ]] then
 fi
 
 # asdf
-[[ -d "$HOME/.asdf" ]] && source "$HOME/.asdf/asdf.sh"
+[[ -f "$HOME/.asdf/asdf.sh" ]] && source "$HOME/.asdf/asdf.sh"
 
 # Stick any site-local configuration in here (i.e. employer-specific config).
 [[ -f ~/.zshrc.local ]] && source ~/.zshrc.local
