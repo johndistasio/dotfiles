@@ -30,6 +30,8 @@
   conflictstyle = diff3
 [push]
   default = current
+[init]
+  defaultBranch = main
 
 # Stick site-local settings customizations here; keep out of source control
 [include]
