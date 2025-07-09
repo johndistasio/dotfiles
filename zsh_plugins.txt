@@ -1,4 +1,4 @@
-# zsh plugins for antibody
+# zsh plugins for antidote
 
 Aloxaf/fzf-tab
 zsh-users/zsh-syntax-highlighting

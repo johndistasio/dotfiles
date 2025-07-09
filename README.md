@@ -2,6 +2,13 @@
 
 Dotfiles are managed with [dotbot](https://github.com/anishathalye/dotbot).
 
+
+## Prerequisites
+
+1. Change the default shell to zsh.
+1. Install [delta](https://github.com/dandavison/delta).
+1. Install [antidote](https://github.com/mattmc3/antidote).
+
 ## Setup
 
 Clone this repository somewhere, enter it, and run:

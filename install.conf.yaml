@@ -8,3 +8,4 @@
     ~/.tmux.conf: tmux.conf
     ~/.zshenv: zshenv
     ~/.zshrc: zshrc 
+    ~/.zsh_plugins.txt: zsh_plugins.txt
