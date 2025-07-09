@@ -13,8 +13,8 @@ Dotfiles are managed with [dotbot](https://github.com/anishathalye/dotbot).
 Clone this repository somewhere, enter it, and run:
 
 ```
-./install --dry-run --verbose
-./install
+./install --verbose --dry-run
+./install --verbose
 ```
 
 ## Manual setup

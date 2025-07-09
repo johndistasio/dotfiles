@@ -4,10 +4,22 @@
 
 - clean: ['~']
 
+- create:
+  - ~/.config/alacritty
+
 - link:
-    ~/.gitconfig: gitconfig
-    ~/.gitignore: gitignore
-    ~/.tmux.conf: tmux.conf
-    ~/.zshenv: zshenv
-    ~/.zshrc: zshrc 
-    ~/.zsh_plugins.txt: zsh_plugins.txt
+    ~/.config/alacritty:
+      glob: true
+      path: alacritty/*
+      relink: true
+    ~/.gitconfig:
+    ~/.gitignore:
+    ~/.tmux.conf:
+    ~/.zshenv:
+    ~/.zshrc:
+    ~/.zsh_plugins.txt:
+  
+- shell:
+  # TODO figure out why using the mode property when creating directories fails
+  - chmod 0755 ~/.config/alacritty
+
