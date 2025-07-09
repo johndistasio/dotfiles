@@ -2,5 +2,9 @@
     link:
       relink: true
 
+- clean: ['~']
+
 - link:
     ~/.tmux.conf: tmux.conf
+    ~/.zshenv: zshenv
+    ~/.zshrc: zshrc 
