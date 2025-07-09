@@ -1,13 +1,14 @@
 # dotfiles
 
-Homespun artisanal application configuration, the way grandad used to do it.
+Dotfiles are managed with [dotbot](https://github.com/anishathalye/dotbot).
 
 ## Setup
 
-Common stuff is scripted. Run:
+Clone this repository somewhere, enter it, and run:
 
 ```
-% zsh install.sh
+./install --dry-run --verbose
+./install
 ```
 
 ## Manual setup
@@ -27,18 +28,3 @@ Create `~/.gitconfig.local` as follows:
 ### zsh Setup
 
 Place custom `zsh` configuration in `~/.zshrc.local`.
-
-
-## dotbot
-
-dotbot is installed as a git submodule.
-
-Setting up dotbot and installing dotfiles:
-```sh
-./install
-```
-
-Updating dotbot:
-```sh
-git submodule update --remote dotbot
-```
