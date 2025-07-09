@@ -5,6 +5,8 @@
 - clean: ['~']
 
 - link:
+    ~/.gitconfig: gitconfig
+    ~/.gitignore: gitignore
     ~/.tmux.conf: tmux.conf
     ~/.zshenv: zshenv
     ~/.zshrc: zshrc 

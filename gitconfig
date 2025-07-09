@@ -8,7 +8,6 @@
   lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
   lod = log --graph --decorate --pretty=format:'%C(auto)%h %C(auto,green)%an <%ae>%Creset %aD%n  %s%n' --abbrev-commit
   new = checkout -b
-
   squish = merge --squash
   staged = diff --staged
   sync = fetch --all --prune

@@ -2,7 +2,6 @@
 
 Dotfiles are managed with [dotbot](https://github.com/anishathalye/dotbot).
 
-
 ## Prerequisites
 
 1. Change the default shell to zsh.
