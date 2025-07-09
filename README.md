@@ -27,3 +27,18 @@ Create `~/.gitconfig.local` as follows:
 ### zsh Setup
 
 Place custom `zsh` configuration in `~/.zshrc.local`.
+
+
+## dotbot
+
+dotbot is installed as a git submodule.
+
+Setting up dotbot and installing dotfiles:
+```sh
+./install
+```
+
+Updating dotbot:
+```sh
+git submodule update --remote dotbot
+```
