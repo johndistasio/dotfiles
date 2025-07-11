@@ -80,11 +80,6 @@ alias cds="$HOME/src"
 alias ll='ls -lh --color=auto'
 alias ls='ls -h --color=auto'
 
-if $darwin; then
-  alias ll='ls -lhG'
-  alias ls='ls -hG'
-fi
-
 # Have a lot of fun!
 alias ..='cd ..'
 
@@ -93,7 +88,13 @@ alias ydl='youtube-dl -o "%(title).150s-%(id)s.%(ext)s" --restrict-filenames'
 
 if [[ "$(uname -s)" == "Darwin" ]]; then
   path=("/opt/homebrew/bin" "/opt/homebrew/sbin" $path)
-  path=("/opt/homebrew/opt/coreutils/libexec/gnubin" $path)
+
+  if [[ -d "/opt/homebrew/opt/coreutils/libexec/gnubin" ]] then
+    path=("/opt/homebrew/opt/coreutils/libexec/gnubin" $path)
+  else
+    alias ll='ls -lhG'
+    alias ls='ls -hG'
+  fi
 fi
 
 # go
