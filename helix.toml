@@ -1,0 +1,25 @@
+theme = "boo_berry"
+
+[editor]
+# Renders a line at the top of the editor displaying open buffers when multiple buffers are open.
+bufferline = "multiple"
+
+[editor.cursor-shape]
+insert = "bar"
+
+[keys.normal]
+# Enable moving line selection up with Shift-x
+# TODO understand what is going on here
+# https://github.com/helix-editor/helix/discussions/6943
+X = ["extend_line_up", "extend_to_line_bounds"]
+A-x = "extend_to_line_bounds"
+- = "file_picker_in_current_buffer_directory"
+
+[keys.normal.space]
+# Swap file pickers
+f = "file_picker_in_current_directory"
+F = "file_picker"
+
+[keys.select]
+X = ["extend_line_up", "extend_to_line_bounds"]
+A-x = "extend_to_line_bounds"

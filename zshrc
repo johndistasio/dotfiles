@@ -104,10 +104,6 @@ path=("$GOPATH/bin" $path)
 # rust
 path=("$HOME/.cargo/bin" $path)
 
-# volta.sh
-export VOLTA_HOME="$HOME/.volta"
-path=("$VOLTA_HOME/bin" $path)
-
 # Ensure XDG binpath is in PATH.
 path=("$HOME/.local/bin" $path)
 
