@@ -65,7 +65,7 @@ setopt prompt_subst
 
 # Executed before each prompt.
 precmd() {
-  vcs_info
+    vcs_info
 }
 
 # Add a marker to our prompt if we're in a toolbox container.
@@ -87,14 +87,14 @@ alias ..='cd ..'
 alias ydl='youtube-dl -o "%(title).150s-%(id)s.%(ext)s" --restrict-filenames'
 
 if [[ "$(uname -s)" == "Darwin" ]]; then
-  path=("/opt/homebrew/bin" "/opt/homebrew/sbin" $path)
+    path=("/opt/homebrew/bin" "/opt/homebrew/sbin" $path)
 
-  if [[ -d "/opt/homebrew/opt/coreutils/libexec/gnubin" ]] then
-    path=("/opt/homebrew/opt/coreutils/libexec/gnubin" $path)
-  else
-    alias ll='ls -lhG'
-    alias ls='ls -hG'
-  fi
+    if [[ -d "/opt/homebrew/opt/coreutils/libexec/gnubin" ]] then
+        path=("/opt/homebrew/opt/coreutils/libexec/gnubin" $path)
+    else
+        alias ll='ls -lhG'
+        alias ls='ls -hG'
+    fi
 fi
 
 # go
@@ -111,9 +111,9 @@ path+=("$HOME/.config/emacs/bin")
  
 # kubernetes
 if type kubectl &> /dev/null; then
-  path+=("$HOME/.krew/bin")
-  alias k="kubectl"
-  source <(kubectl completion zsh)
+    path+=("$HOME/.krew/bin")
+    alias k="kubectl"
+    source <(kubectl completion zsh)
 fi
 
 # Fix navigation cluster keys within zsh
@@ -125,8 +125,8 @@ bindkey "^[[5~" beginning-of-history
 bindkey "^[[6~" end-of-history
 
 if [[ -d "$HOME/.antidote" ]] then
-  source "$HOME/.antidote/antidote.zsh"
-  antidote load "$HOME/.zsh_plugins.txt"
+    source "$HOME/.antidote/antidote.zsh"
+    antidote load "$HOME/.zsh_plugins.txt"
 fi
 
 # Stick any site-local configuration in here (i.e. employer-specific config).
