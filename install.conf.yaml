@@ -7,6 +7,7 @@
 - create:
   - ~/.config/alacritty
   - ~/.config/ghostty
+  - ~/.config/helix
 
 - link:
     ~/.config/alacritty:
@@ -14,6 +15,7 @@
       path: alacritty/*
       relink: true
     ~/.config/ghostty/config: ghostty.toml
+    ~/.config/helix/config.toml: helix.toml
     ~/.gitconfig:
     ~/.gitignore:
     ~/.tmux.conf:
@@ -25,4 +27,5 @@
   # TODO figure out why using the mode property when creating directories fails
   - chmod 0755 ~/.config/alacritty
   - chmod 0755 ~/.config/ghostty
+  - chmod 0755 ~/.config/helix
 
