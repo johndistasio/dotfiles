@@ -108,6 +108,8 @@ path=("$HOME/.cargo/bin" $path)
 path=("$HOME/.local/bin" $path)
 
 path+=("$HOME/.config/emacs/bin")
+
+eval "$($HOME/.local/bin/mise activate zsh)"
  
 # kubernetes
 if type kubectl &> /dev/null; then
