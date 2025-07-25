@@ -1,6 +1,9 @@
 #font-family = "Iosevka Term"
 #font-family = Hack
 #font-family = "Source Code Pro"
-font-family = "Inconsolata"
+#font-family = "Inconsolata"
 #font-family = "Maple Mono"
-
+#font-family = "ProggyVectorDotted"
+#font-family = "DinaRemasterII"
+# NF == has nerd font symbols embedded
+font-family = "Cascadia Code NF"
