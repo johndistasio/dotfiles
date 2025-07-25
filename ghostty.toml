@@ -5,5 +5,13 @@
 #font-family = "Maple Mono"
 #font-family = "ProggyVectorDotted"
 #font-family = "DinaRemasterII"
+
 # NF == has nerd font symbols embedded
-font-family = "Cascadia Code NF"
+# Mono == no ligatures
+#font-family = "Cascadia Mono NF"
+
+#font-family = "Fantasque Sans Mono"
+
+#font-family = "Space Mono"
+
+font-family = "Ubuntu Mono"
