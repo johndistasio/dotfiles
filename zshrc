@@ -109,7 +109,9 @@ path=("$HOME/.local/bin" $path)
 
 path+=("$HOME/.config/emacs/bin")
 
-eval "$($HOME/.local/bin/mise activate zsh)"
+if [[ -x "$HOME/.local/bin/mise" ]]; then
+    eval "$($HOME/.local/bin/mise activate zsh)"
+fi
  
 # kubernetes
 if type kubectl &> /dev/null; then
