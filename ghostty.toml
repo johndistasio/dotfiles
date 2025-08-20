@@ -9,9 +9,7 @@
 # NF == has nerd font symbols embedded
 # Mono == no ligatures
 #font-family = "Cascadia Mono NF"
-
-#font-family = "Fantasque Sans Mono"
-
+font-family = "Fantasque Sans Mono"
 #font-family = "Space Mono"
-
-font-family = "Ubuntu Mono"
+#font-family = "Ubuntu Mono"
+#font-family = "Miracode"
