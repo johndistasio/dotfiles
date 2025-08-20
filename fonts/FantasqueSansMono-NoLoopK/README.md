@@ -3,8 +3,7 @@ Fantasque Sans Mono
 
 A programming font, designed with functionality in mind, and with some
 wibbly-wobbly handwriting-like fuzziness that makes it unassumingly cool.
-[Download](https://github.com/belluzj/fantasque-sans/releases/latest) or 
-see [installation instructions](#installation).
+[Download](https://github.com/belluzj/fantasque-sans/releases/latest).
 
 
 ![](Specimen/urxvt13.png)
@@ -48,7 +47,7 @@ Stylistic set(s)
 ### `ss01`: nondescript `k`
 
 No ~~distractive~~ lovely loop.
-[Get the pre-activated version here](https://github.com/belluzj/fantasque-sans/releases/download/1.8.0/FantasqueSansMono-NoLoopK.zip)
+[Get the pre-activated version here](https://github.com/belluzj/fantasque-sans/releases/download/v1.7.2-alpha.3/FantasqueSansMono-NoLoopK.zip)
 or see the [issue #67](https://github.com/belluzj/fantasque-sans/issues/67)
 for techniques to activate the stylistic set.
 
@@ -64,22 +63,9 @@ Licensed under the SIL Open Font License (see [LICENSE.txt](LICENSE.txt)).
 Please send me an e-mail or [report an issue on
 Github](http://github.com/belluzj/cosmic-sans-neue/issues) if you stumble upon
 bad design or rendering problems (with screen shot if possible), or if you need
-more characters, or if you want to compliment me (I love compliments).
-
-Installation
-------------
-
-You can [download the latest version](https://github.com/belluzj/fantasque-sans/releases/latest)
-and install it by hand. In the `NoLoopK` variant, the looped lowercase `k` is 
-replaced with a straight version. The `LargeLineHeight` variant is especially 
-useful for users of accented capitals. For more info, see the [CHANGELOG](CHANGELOG.md).
-
-Automatic installation on macOS with [homebrew](https://brew.sh):
-
-    brew tap homebrew/cask-fonts #You only need to do this once for cask-fonts
-    brew cask install font-fantasque-sans-mono
-
-Instructions for other platforms might follow.
+more characters, or if you want to compliment me (I love compliments). I also
+accept
+[Flattry](https://flattr.com/thing/2258061/belluzjcosmic-sans-neue-on-GitHub).
 
 Building installable font files
 -------------------------------
@@ -88,8 +74,10 @@ The build process requires:
 * FontForge with python scripting support,
 * `ttfautohint`
 * `sfnt2woff` (from the `woff-tools` package on Ubuntu)
+* `ttf2eot`, for example from [this
+  repository](https://github.com/harrastia/ttf2eot).
 * `woff2_compress` from [the Google WOFF2
-  tools](https://github.com/google/woff2) or `woff2` package on Ubuntu
+  tools](https://github.com/google/woff2)
 
 Run `make`. You should see green stuff and some "OK" messages.
 
@@ -115,7 +103,7 @@ use on the web, along with the matching CSS font declarations. To use them,
 you must combine in the same folder:
 * a custom `.css` file that you can assemble from the `*-decl.css` fragments
   (you can only pick the styles that you need, e.g. normal and bold)
-* the matching `.svg`, `.woff`, `.woff2` files from `Webfonts/`
+* the matching `.svg`, `.woff`, `.woff2`, `.eot` files from `Webfonts/`
 * the matching `.ttf` files from the `TTF/` folder
 * the matching `.otf` files from the `OTF/` folder.
 
