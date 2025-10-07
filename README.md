@@ -34,3 +34,4 @@ Create `~/.gitconfig.local` as follows:
 ### zsh Setup
 
 Place custom `zsh` configuration in `~/.zshrc.local`.
+

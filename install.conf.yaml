@@ -22,7 +22,7 @@
     ~/.zshenv:
     ~/.zshrc:
     ~/.zsh_plugins.txt:
-  
+
 - shell:
   # TODO figure out why using the mode property when creating directories fails
   - chmod 0755 ~/.config/alacritty
