@@ -13,3 +13,6 @@ font-family = "Fantasque Sans Mono"
 #font-family = "Space Mono"
 #font-family = "Ubuntu Mono"
 #font-family = "Miracode"
+
+keybind = shift+enter=text:\x1b\r
+
