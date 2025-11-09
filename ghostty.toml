@@ -16,3 +16,5 @@ font-family = "Fantasque Sans Mono"
 
 keybind = shift+enter=text:\x1b\r
 
+window-decoration = client
+
