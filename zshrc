@@ -7,14 +7,14 @@
 typeset -U path PATH
 
 # Array of 256-color compatible color escapes.
-typeset -A clr
-clr[reset]='%F{F}'
-clr[red]='%F{9}'
-clr[green]='%F{10}'
-clr[yellow]='%F{11}'
-clr[blue]='%F{12}'
-clr[purple]='%F{13}'
-clr[cyan]='%F{13}'
+typeset -A color
+color[reset]='%F{F}'
+color[red]='%F{9}'
+color[green]='%F{10}'
+color[yellow]='%F{11}'
+color[blue]='%F{12}'
+color[purple]='%F{13}'
+color[cyan]='%F{13}'
 
 # Initialize the completion system.
 autoload -Uz compinit && compinit
@@ -38,17 +38,17 @@ zstyle ':vcs_info:*' enable git
 zstyle ':vcs_info:git:*' check-for-changes true
 
 # Formatting for %c (staged changes) format string.
-zstyle ':vcs_info:git*' stagedstr "${clr[green]}+${clr[reset]}"
+zstyle ':vcs_info:git*' stagedstr "${color[green]}+${color[reset]}"
 
 # Formatting for %u (unstaged changes) format string.
-zstyle ':vcs_info:git*' unstagedstr "${clr[red]}+${clr[reset]}"
+zstyle ':vcs_info:git*' unstagedstr "${color[red]}+${color[reset]}"
 
 # Normal prompt format string.
-vcs_info_git_formats=":${clr[purple]}%b${clr[reset]}%u%c"
+vcs_info_git_formats=":${color[purple]}%b${clr[reset]}%u%c"
 zstyle ':vcs_info:git*' formats "${vcs_info_git_formats}"
 
 # Format prompt string used during an "action" like a rebase or merge.
-zstyle ':vcs_info:git*' actionformats "${vcs_info_git_formats}:${clr[cyan]}%a${clr[reset]}"
+zstyle ':vcs_info:git*' actionformats "${vcs_info_git_formats}:${color[cyan]}%a${color[reset]}"
 
 # Change directory by typing directory name if it's not a command.
 setopt auto_cd
