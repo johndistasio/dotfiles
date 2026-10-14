@@ -119,6 +119,12 @@ path=("$HOME/.cargo/bin" $path)
 if [[ -x "$HOME/.local/bin/mise" ]]; then
     eval "$($HOME/.local/bin/mise activate zsh)"
 fi
+
+# gcloud
+if [[ -d "$HOME/google-cloud-sdk/bin" ]]; then
+    path=("$HOME/google-cloud-sdk/bin" $path)
+    source "$HOME/google-cloud-sdk/completion.zsh.inc"
+fi
  
 # kubernetes
 if type kubectl &> /dev/null; then
