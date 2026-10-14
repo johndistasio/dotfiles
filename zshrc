@@ -89,7 +89,11 @@ alias ydl='youtube-dl -o "%(title).150s-%(id)s.%(ext)s" --restrict-filenames'
 if [[ "$(uname -s)" == "Darwin" ]]; then
     path=("/opt/homebrew/bin" "/opt/homebrew/sbin" $path)
 
-    if [[ -d "/opt/homebrew/opt/coreutils/libexec/gnubin" ]] then
+    if [[ -d "/opt/homebrew/opt/gnu-tar/libexec/gnubin" ]]; then
+        path=("/opt/homebrew/opt/gnu-tar/libexec/gnubin" $path)
+    fi
+
+    if [[ -d "/opt/homebrew/opt/coreutils/libexec/gnubin" ]]; then
         path=("/opt/homebrew/opt/coreutils/libexec/gnubin" $path)
     else
         alias ll='ls -lhG'
