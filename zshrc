@@ -105,6 +105,9 @@ if [[ "$(uname -s)" == "Darwin" ]]; then
     fi
 fi
 
+# dotnet
+path=("$HOME/.dotnet/tools" $path)
+
 # go
 export GOPATH="$HOME/go"
 path=("$GOPATH/bin" $path)
