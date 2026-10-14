@@ -115,11 +115,7 @@ path=("$GOPATH/bin" $path)
 # rust
 path=("$HOME/.cargo/bin" $path)
 
-# Ensure XDG binpath is in PATH.
-path=("$HOME/.local/bin" $path)
-
-path+=("$HOME/.config/emacs/bin")
-
+# mise
 if [[ -x "$HOME/.local/bin/mise" ]]; then
     eval "$($HOME/.local/bin/mise activate zsh)"
 fi
@@ -130,6 +126,9 @@ if type kubectl &> /dev/null; then
     alias k="kubectl"
     source <(kubectl completion zsh)
 fi
+
+# Ensure XDG binpath is in PATH.
+path=("$HOME/.local/bin" $path)
 
 # Fix navigation cluster keys within zsh
 bindkey "^[[H" beginning-of-line
