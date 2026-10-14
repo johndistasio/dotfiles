@@ -99,6 +99,10 @@ if [[ "$(uname -s)" == "Darwin" ]]; then
         alias ll='ls -lhG'
         alias ls='ls -hG'
     fi
+
+    if [[ -d "/opt/homebrew/opt/llvm/bin" ]]; then
+        path=("/opt/homebrew/opt/llvm/bin" $path)
+    fi
 fi
 
 # go
