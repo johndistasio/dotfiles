@@ -7,6 +7,7 @@
 - create:
   - ~/.config/alacritty
   - ~/.config/ghostty
+  - ~/.config/ghostty/themes
   - ~/.config/helix
 
 - link:
@@ -15,6 +16,10 @@
       path: alacritty/*
       relink: true
     ~/.config/ghostty/config: ghostty.toml
+    ~/.config/ghostty/themes:
+      glob: true
+      path: home/config/ghostty/themes/*
+      relink: true
     ~/.config/helix/config.toml: helix.toml
     ~/.gitconfig:
     ~/.gitignore:
