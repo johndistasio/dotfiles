@@ -1,18 +1,17 @@
-#font-family = "Iosevka Term"
 #font-family = Hack
-#font-family = "Source Code Pro"
 #font-family = "Inconsolata"
-#font-family = "Maple Mono"
 #font-family = "ProggyVectorDotted"
 #font-family = "DinaRemasterII"
-
 # NF == has nerd font symbols embedded
 # Mono == no ligatures
 #font-family = "Cascadia Mono NF"
-font-family = "Fantasque Sans Mono"
+#font-family = "Fantasque Sans Mono"
 #font-family = "Space Mono"
 #font-family = "Ubuntu Mono"
-#font-family = "Miracode"
+
+font-family = "IBM Plex Mono"
+
+font-size = 18
 
 keybind = shift+enter=text:\x1b\r
 
