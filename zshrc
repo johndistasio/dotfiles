@@ -44,7 +44,7 @@ zstyle ':vcs_info:git*' stagedstr "${color[green]}+${color[reset]}"
 zstyle ':vcs_info:git*' unstagedstr "${color[red]}+${color[reset]}"
 
 # Normal prompt format string.
-vcs_info_git_formats=":${color[purple]}%b${clr[reset]}%u%c"
+vcs_info_git_formats=":${color[purple]}%b${color[reset]}%u%c"
 zstyle ':vcs_info:git*' formats "${vcs_info_git_formats}"
 
 # Format prompt string used during an "action" like a rebase or merge.
