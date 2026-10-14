@@ -7,3 +7,5 @@
 .vagrant/
 
 *.pyc
+
+**/.claude/settings.local.json
