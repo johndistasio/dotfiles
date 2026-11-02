@@ -8,10 +8,10 @@
 #font-family = "Fantasque Sans Mono"
 #font-family = "Space Mono"
 #font-family = "Ubuntu Mono"
+#font-family = "IBM Plex Mono"
 
-font-family = "IBM Plex Mono"
-
-font-size = 18
+font-family = "IoskeleyMonoNL Nerd Font Mono"
+font-size = 14
 
 keybind = shift+enter=text:\x1b\r
 
